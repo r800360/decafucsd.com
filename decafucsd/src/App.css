@@ -1,0 +1,61 @@
+.page {
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #8c74b7;
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 60px;
+  flex: 1;
+  font: 'Roboto', sans-serif;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  flex: 1;
+  font: 'Roboto', sans-serif;
+  min-height: 100px;
+}
+
+.body {
+  display: flex;
+  flex: 8;
+  justify-content: center;
+  align-items: center;
+  background-color: #dde0ee;
+  width: 100vw;
+}
+
+.event  {
+  display: flex;
+  margin-left: 25px;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: "Monaco", Monospace;
+  background-color: hsl(231, 32%, 90%);
+  border-radius: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+#registration {
+  margin-top: 50px;
+}
