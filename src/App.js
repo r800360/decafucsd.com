@@ -1,7 +1,16 @@
-import React from 'react';
+// import React from 'react';
 import header from './assets/student/logo-header.svg'; // Import the image
 import body from './assets/student/hero-graphic-left.svg'; // Import the image
 import './App.css';
+
+import { Switch, Route, withRouter } from "react-router-dom";
+import React, { lazy, Suspense, useEffect } from "react";
+import { Spinner } from "reactstrap";
+
+import Layout from "./layouts/Layout";
+
+import DecafRoutes from "./pages/DecafPage/Routes";
+import UpcomingDecafRoutes from "./pages/UpcomingEvents/DecafPage/Routes";
 
 function App() {
   return (
