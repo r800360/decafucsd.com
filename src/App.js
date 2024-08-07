@@ -3,7 +3,7 @@ import header from './assets/student/logo-header.svg'; // Import the image
 import body from './assets/student/hero-graphic-left.svg'; // Import the image
 import './App.css';
 
-import { Switch, Route, withRouter } from "react-router-dom";
+// import { Switch, Route, withRouter } from "react-router-dom";
 import React, { lazy, Suspense, useEffect } from "react";
 import { Spinner } from "reactstrap";
 
