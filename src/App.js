@@ -5,7 +5,7 @@ import './App.css';
 
 // import { Switch, Route, withRouter } from "react-router-dom";
 import React, { lazy, Suspense, useEffect } from "react";
-import { Spinner } from "reactstrap";
+// import { Spinner } from "reactstrap";
 
 import Layout from "./layouts/Layout";
 
