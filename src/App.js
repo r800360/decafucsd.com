@@ -11,7 +11,6 @@ import Layout from "./layouts/Layout";
 
 import DecafRoutes from "./pages/DecafPage/Routes";
 import UpcomingDecafRoutes from "./pages/UpcomingEvents/DecafPage/Routes";
-import HomePage from "./pages/HomePage";
 
 // function App() {
 //   return (
