@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import header from "./assets/student/logo-header.svg"; // Import the image
 import body from "./assets/student/hero-graphic-left.svg"; // Import the image
 import "./App.css";
