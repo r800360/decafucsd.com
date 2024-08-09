@@ -53,7 +53,8 @@ function Routes() {
     return (
         <Suspense fallback={<LoadingSpinner />}>
             <Switch>
-                <Route exact path="/" component={withLayout(HomePage)} />
+                {/* <Route exact path="/" component={withLayout(HomePage)} /> */}
+                <Route path="/decaf" component={DecafRoutes} />
                 <Route
                     exact
                     path="/orgs"
