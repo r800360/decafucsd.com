@@ -19,6 +19,11 @@ class DecafRoutes extends React.Component {
         return (
             <Switch>
                 <Route
+                    path="/"
+                    exact
+                    component={this.withDecafLayout(DecafPage, false)}
+                />
+                <Route
                     path="/decaf/"
                     exact
                     component={this.withDecafLayout(DecafPage, false)}
