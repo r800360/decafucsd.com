@@ -20,11 +20,11 @@ const Sponsors = () => {
     return (
         <section className="decaf-sponsors">
             <Container>
-                <h1 className="decaf-sponsors__title">
+                {/* <h1 className="decaf-sponsors__title">
                     ATTENDING
                     <br />
                     <span>SPONSORS</span>
-                </h1>
+                </h1> */}
                 <Row>
                     <p className="decaf-sponsors__contact">
                         Contact us at{' '}
