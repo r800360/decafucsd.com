@@ -78,7 +78,7 @@ class DecafPage extends React.Component {
                                 }}
                             >
                                 <h1 style={desStyle}>
-                                    DECaF Fall 2023 will be hosted on November 6, 2023.
+                                    DECaF Fall 2023 will be hosted on October 9, 2024.
                                 </h1>
                                 {!this.props.isCompany && (
                                     <Button href="/decaf/attending">

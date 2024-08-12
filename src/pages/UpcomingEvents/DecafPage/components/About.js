@@ -40,7 +40,7 @@ const About = ({ isCompany }) => {
                         <p>
                             {isCompany
                                 ? 'Attending Decaf will provide you with the opportunity to draw from a broad pool of UC San Diego’s talented engineering students. Join our growing list of sponsors to ensure you get a chance to interact with students and fulfill your hiring goals.'
-                                : 'The event will take place from November 6, 2023.'}
+                                : 'The event will take place from October 9, 2024.'}
                         </p>
                     </Col>
                 </Row>

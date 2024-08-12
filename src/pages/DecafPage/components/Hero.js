@@ -33,7 +33,7 @@ const Hero = ({ isCompany }) => {
                         <p>
                             Disciplines of Engineering Career Fair
                             <br />
-                            November 6, 2023
+                            October 9, 2024
                         </p>
                         <Button
                             className="btn-1"
