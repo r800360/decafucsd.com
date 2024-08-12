@@ -65,17 +65,17 @@ const studentFaq = [
         bgColor: '#FFF',
         img: Jazz,
     },
-    {
-        question: 'What companies are attending?',
-        answer: (
-            <>
-                Check out the list of attending companies{' '}
-                <Link to="/decaf/attending">here</Link> .
-            </>
-        ),
-        bgColor: '#8C74B7',
-        img: RunWithIt,
-    },
+    // {
+    //     question: 'What companies are attending?',
+    //     answer: (
+    //         <>
+    //             Check out the list of attending companies{' '}
+    //             <Link to="/decaf/attending">here</Link> .
+    //         </>
+    //     ),
+    //     bgColor: '#8C74B7',
+    //     img: RunWithIt,
+    // },
 ];
 
 export default studentFaq;

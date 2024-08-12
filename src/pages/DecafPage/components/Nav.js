@@ -16,7 +16,7 @@ import LogoStudent from '../assets/student/logo-header.svg';
 
 const DecafNav = ({ isCompany }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const navLinks = useMemo(() => ['about', 'faq', 'sponsors'], []);
+    const navLinks = useMemo(() => ['about', 'faq'], []);//'sponsors'], []);
 
     const toggle = () => setIsOpen(!isOpen);
 
