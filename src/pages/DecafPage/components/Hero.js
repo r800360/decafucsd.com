@@ -37,10 +37,15 @@ const Hero = ({ isCompany }) => {
                         </p>
                         <Button
                             className="btn-1"
+                            // href={
+                            //     isCompany
+                            //         ? 'https://events.eventzilla.net/e/disciplines-of-engineering-career-fair-fa23-2138589575'
+                            //         : 'https://forms.gle/DEAekjXFoidJKtw76'
+                            // }
                             href={
                                 isCompany
-                                    ? 'https://events.eventzilla.net/e/disciplines-of-engineering-career-fair-fa23-2138589575'
-                                    : 'https://forms.gle/DEAekjXFoidJKtw76'
+                                    ? 'https://www.tinyurl.com/decaf-2024-registration'
+                                    : 'https://www.tinyurl.com/decaf-2024-registration'
                             }
                             target="_blank"
                             rel="noopener noreferrer"

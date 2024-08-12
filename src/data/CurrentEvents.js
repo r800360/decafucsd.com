@@ -7,7 +7,7 @@ const currEvents = [
         date: '2023-10-03T00:00:00.000Z',
     },
      {
-        name: 'DECaF Fall 2023',
+        name: 'DECaF Fall 2024',
         link: '/decaf',
         isInternalLink: true,
         img: '/decaf-event-fa23.svg',
