@@ -54,7 +54,7 @@ function Routes() {
     return (
         <Suspense fallback={<LoadingSpinner />}>
             <Switch>
-                <Route exact path="/" component={withLayout(DecafPage)} />
+                {/* <Route exact path="/" component={withLayout(DecafPage)} /> */}
                 <Route
                     exact
                     path="/orgs"
@@ -88,6 +88,7 @@ function Routes() {
                     component={withLayout(FinancePage, true)}
                 />
 
+                <Route path="/" component={DecafRoutes} />
                 <Route path="/decaf" component={DecafRoutes} />
                 <Route path="/matcha" component={MatchaRoutes} />
                 <Route path="/enspire" component={EnspireRoutes} />
