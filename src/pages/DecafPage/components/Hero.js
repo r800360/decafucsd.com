@@ -54,11 +54,11 @@ const Hero = ({ isCompany }) => {
                                 ? 'Register Your Company'
                                 : 'Sign Up for Decaf'}
                         </Button>
-                        {!isCompany && (
+                        {/* {!isCompany && (
                             <Button className="btn-2" href="/decaf/attending">
                                 Attending Companies
                             </Button>
-                        )}
+                        )} */}
                         <img
                             src={
                                 isCompany

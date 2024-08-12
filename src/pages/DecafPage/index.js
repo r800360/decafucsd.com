@@ -80,11 +80,11 @@ class DecafPage extends React.Component {
                                 <h1 style={desStyle}>
                                     DECaF Fall 2024 will be hosted on October 9, 2024.
                                 </h1>
-                                {!this.props.isCompany && (
+                                {/* {!this.props.isCompany && (
                                     <Button href="/decaf/attending">
                                         View Attending Companies
                                     </Button>
-                                )}
+                                )} */}
                             </Col>
                             <Col>
                                 <img
