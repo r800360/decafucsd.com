@@ -38,7 +38,7 @@ const companyFaq = [
         question:
             'I registered my company but didn’t see a confirmation email.',
         answer:
-            'If you did not receive a confirmation after you registered, please email sponsor@tesc.ucsd.edu and let us know.',
+            'If you did not receive a confirmation after you registered, please email contact@tesc.ucsd.edu and let us know.',
         bgColor: '#EFC404',
         img: Sax,
     },

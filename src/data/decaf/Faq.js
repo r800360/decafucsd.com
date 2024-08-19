@@ -24,11 +24,11 @@ const companyFaq = [
                 If you did not receive a confirmation after you registered,
                 please email{' '}
                 <a
-                    href="mailto:sponsor@tesc.ucsd.edu"
+                    href="mailto:contact@tesc.ucsd.edu"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    sponsor@tesc.ucsd.edu
+                    contact@tesc.ucsd.edu
                 </a>{' '}
                 and let us know!
             </div>

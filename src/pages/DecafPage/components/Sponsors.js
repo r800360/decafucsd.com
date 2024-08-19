@@ -29,10 +29,10 @@ const Sponsors = () => {
                     <p className="decaf-sponsors__contact">
                         Contact us at{' '}
                         <a
-                            href="mailto:sponsor@tesc.ucsd.edu"
+                            href="mailto:contact@tesc.ucsd.edu"
                             style={{ color: '#29193E' }}
                         >
-                            sponsor@tesc.ucsd.edu
+                            contact@tesc.ucsd.edu
                         </a>{' '}
                         if you have any questions!
                     </p>
