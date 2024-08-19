@@ -59,47 +59,8 @@ class DecafPage extends React.Component {
                 <Hero isCompany={this.props.isCompany} />
                 <About isCompany={this.props.isCompany} />
                 {this.props.isCompany && <Stats />}
-                <section
-                    className={`decaf-announcement ${
-                        this.props.isCompany
-                            ? 'decaf-bg-orange'
-                            : 'decaf-bg-purple'
-                    }`}
-                >
-                    <Container>
-                        <Row>
-                            <Col
-                                md={8}
-                                xs={12}
-                                style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    justifyContent: 'center',
-                                }}
-                            >
-                                <h1 style={desStyle}>
-                                    DECaF Fall 2024 will be hosted on October 9, 2024.
-                                </h1>
-                                {/* {!this.props.isCompany && (
-                                    <Button href="/decaf/attending">
-                                        View Attending Companies
-                                    </Button>
-                                )} */}
-                            </Col>
-                            <Col>
-                                <img
-                                    src={
-                                        this.props.isCompany
-                                            ? BobbyBassCompany
-                                            : BobbyBassStudent
-                                    }
-                                    alt="bobby bass"
-                                    style={imgStyle}
-                                />
-                            </Col>
-                        </Row>
-                    </Container>
-                </section>
+                
+                {/* section here */}
 
                 <Faq isCompany={this.props.isCompany} />
                 <Sponsors />
