@@ -52,7 +52,8 @@ const Hero = ({ isCompany }) => {
                         >
                             {isCompany
                                 ? 'Register Your Company'
-                                : 'Sign Up for Decaf'}
+                                // : 'Sign Up for Decaf'}
+                                : 'Company Registration'}
                         </Button>
                         {/* {!isCompany && (
                             <Button className="btn-2" href="/decaf/attending">
