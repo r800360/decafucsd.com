@@ -1,76 +1,120 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { withRouter } from 'react-router-dom';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-} from 'reactstrap';
-import $ from 'jquery';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import LogoCompany from '../assets/company/logo-header.svg';
-import LogoStudent from '../assets/student/logo-header.svg';
+function Nav(props) {
+    const everyoneLinks = () => (
+        <ul className="navbar-nav ml-auto">
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/about">
+                    ABOUT
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/members">
+                    MEMBERS
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/#events">
+                    EVENTS
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/#join">
+                    JOIN
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/#contact">
+                    CONTACT
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/signup">
+                    NEWSLETTER
+                </NavLink>
+            </li>
+            <li className="nav-item text-center">
+                <NavLink className="nav-link btn nav__toggle-active" to="/orgs">
+                    FOR TESC ORGS
+                </NavLink>
+            </li>
+        </ul>
+    );
 
-const DecafNav = ({ isCompany }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const navLinks = useMemo(() => ['about', 'faq', 'sponsors'], []);
+    const orgLinks = () => (
+        <ul className="navbar-nav ml-auto">
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/orgs/membership">
+                    MEMBERSHIP
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/orgs/faqs">
+                    COUNCIL FAQS
+                </NavLink>
+            </li>
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/orgs/finance">
+                    FINANCE
+                </NavLink>
+            </li>
+            {/*<li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="/orgs/spaces">
+                    PROJECT SPACES
+                </NavLink>
+    </li>*/}
+            {/*<li class="nav-item nav__item text-center">
+                    <a class="nav-link" href="">BRANDING</a>
+                    </li>*/}
+            <li className="nav-item nav__item text-center">
+                <NavLink className="nav-link" to="#contact">
+                    CONTACT
+                </NavLink>
+            </li>
+            <li className="nav-item text-center">
+                <NavLink className="nav-link btn nav__toggle-active" to="/">
+                    FOR EVERYONE
+                </NavLink>
+            </li>
+        </ul>
+    );
 
-    const toggle = () => setIsOpen(!isOpen);
-
-    useEffect(() => {
-        navLinks.forEach((name) => {
-            $(`a[href='#${name}']`).on('click', () => {
-                $('html,body').animate(
-                    {
-                        scrollTop: $(`.decaf-${name}`).offset().top,
-                    },
-                    'slow'
-                );
-            });
-        });
-
-        return () => {
-            navLinks.forEach(({ href }) => $(`a[href='${href}']`).off());
-        };
-    }, [navLinks]);
+    const { isOrgs } = props;
 
     return (
-        <header className="decaf-nav">
-            <Navbar expand="lg" light>
-                <NavbarBrand>
-                    <img
-                        src={isCompany ? LogoCompany : LogoStudent}
-                        alt="logo"
-                    />
-                    <span
-                        className={isCompany ? 'logo-company' : 'logo-student'}
+        <header>
+            <div className="pt-3" id="top-nav">
+                <nav className="navbar navbar-expand-lg navbar-light nav__items">
+                    <NavLink to="/">
+                        <img
+                            className="nav__logo"
+                            href="#"
+                            src="/tesc-logo.png"
+                            alt=""
+                        />
+                    </NavLink>
+                    <button
+                        className="navbar-toggler nav__toggler collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
                     >
-                        DECAF
-                    </span>
-                </NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav
-                        navbar
-                        className={`ml-auto ${
-                            isCompany ? 'nav-company' : 'nav-student'
-                        }`}
+                        <span className="navbar-toggler-icon" />
+                    </button>
+                    <div
+                        className="collapse navbar-collapse"
+                        id="navbarSupportedContent"
                     >
-                        {navLinks.map((name, i) => (
-                            <NavItem key={i}>
-                                <NavLink href={`#${name}`}>
-                                    {name.toUpperCase()}
-                                </NavLink>
-                            </NavItem>
-                        ))}
-                    </Nav>
-                </Collapse>
-            </Navbar>
+                        {isOrgs ? orgLinks() : everyoneLinks()}
+                    </div>
+                </nav>
+            </div>
         </header>
     );
-};
+}
 
-export default withRouter(DecafNav);
+export default Nav;
