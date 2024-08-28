@@ -5,6 +5,7 @@
     font-family: "Lalezar", system-ui;
     font-weight: 400;
     font-style: normal;
+    user-select: none;
 }
 
 .home .content {
@@ -43,30 +44,56 @@
     font-size: 24px;
     margin: auto;
     text-shadow: 0px 0px 250px rgb(0, 0, 0);
+    user-select: text;
 }
 
 .home .buttons {
     display: flex;
     flex-direction: row;
     font-size: 28px;
-    color: white;
+}
+
+.home .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+}
+
+.home .deadline {
+    margin: 0 0;
 }
 
 .home .button {
     width: 320px;
     height: 80px;
     margin: 48px 96px;
+    margin-bottom: 10px;
     border-radius: 100px;
-    box-shadow: 0px 0px 250px rgb(0, 0, 0);
+    box-shadow: 0px 0px 250px hsl(0, 0%, 25%);
     text-align: center;
     align-content: center;
     z-index: 1;
+    color: white;
+    font-size: 28px;
 }
 
 .home #student {
     background-color: #65558F;
+    opacity: 0.5;
 }
 
 .home #company {
     background-color: #8C74B7;
+}
+
+.home #company:hover{
+    box-shadow: 0px 0px 10px hsl(0, 0%, 75%), 0px 0px 250px hsl(0, 0%, 25%);
+    background-color: hsl(261, 32%, 62%);
+}
+
+.home a {
+    text-decoration: none;
+    color: inherit;
 }

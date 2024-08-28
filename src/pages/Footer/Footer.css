@@ -6,6 +6,7 @@
     font-style: normal;
     display: flex;
     flex-direction: column;
+    user-select: none;
 }
 
 .footer .contact {
@@ -21,6 +22,7 @@
     margin-top: -20px;
     padding-top: 20px;
     z-index: 1;
+    user-select: text;
 }
 
 .footer .contact p {

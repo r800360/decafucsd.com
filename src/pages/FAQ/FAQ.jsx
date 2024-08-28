@@ -2,7 +2,7 @@ import './FAQ.css'
 import Border from '../../assets/Border.svg'
 function FAQ() {
     return(
-        <div className='faq'>
+        <div className='faq' id='faq'>
             <img src={Border} alt=''></img>
             <div className='title'><p>Frequently Asked Questions</p></div>
             <div className='content'>

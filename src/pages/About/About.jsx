@@ -3,7 +3,7 @@ import SaxGuy from '../../assets/SaxGuy.svg'
 
 function About() {
     return(
-        <div className='about'>
+        <div className='about' id='about'>
             <div className='title'><p>What is DECaF?</p></div>
             <div className='content'>
                 <img src={SaxGuy} alt='SaxGuy' id='sax'></img>
