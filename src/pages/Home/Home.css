@@ -1,0 +1,71 @@
+.home {
+    background-color: #FCFCFC;
+    width: 100%;
+    height: 911px;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
+    height: 821px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 ;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+}
+
+#heading {
+    color: #29193E;
+    font-size: 128px;
+    margin-bottom: -24px;
+    margin-top: 0;
+    text-shadow: 0px 0px 250px rgb(0, 0, 0);
+}
+
+#subheading {
+    color: #C8A9F1;
+    font-size: 24px;
+    margin: 20px 0;
+    text-shadow: 0px 0px 250px rgb(0, 0, 0);
+}
+
+#venue {
+    color: #8C74B7;
+    font-size: 24px;
+    margin: auto;
+    text-shadow: 0px 0px 250px rgb(0, 0, 0);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+    color: white;
+}
+
+.button {
+    width: 320px;
+    height: 80px;
+    margin: 48px 96px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 250px rgb(0, 0, 0);
+    text-align: center;
+    align-content: center;
+}
+
+#student {
+    background-color: #65558F;
+}
+
+#company {
+    background-color: #8C74B7;
+}
