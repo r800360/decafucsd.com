@@ -1,5 +1,6 @@
 import './About.css'
 import SaxGuy from '../../assets/SaxGuy.svg'
+
 function About() {
     return(
         <div className='about'>
