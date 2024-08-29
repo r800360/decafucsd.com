@@ -1,0 +1,37 @@
+.faq-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden; /* Ensures no overflow during transition */
+    color: #000;
+    font-size: 24px;
+    width: 1000px;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #8C74B7;
+    border-radius: 5px;
+  }
+  
+  .faq-question h3 {
+    margin: 0;
+  }
+  
+  .faq-toggle {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+  
+  .faq-answer {
+    padding: 10px;
+    background-color: #8C74B7;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    transition: height 0.3s ease-out; /* Smooth transition */
+    overflow: hidden; /* Ensures no overflow during transition */
+  }
+  
