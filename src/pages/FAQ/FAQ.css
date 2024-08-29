@@ -1,0 +1,78 @@
+.faq {
+    background-color: #FCFCFC;
+    width: 100%;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq .title {
+    display: flex;
+    background-color: #D8C1F7;
+    width: 100%;
+    height: 131px;
+    font-size: 64px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 150px rgb(0, 0, 0);
+    margin-top: -20px;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.faq .content {
+    background-color: #D8C1F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 234px;
+    margin-bottom: -20px;
+    padding-bottom: 64px;
+}
+
+.faq img {
+    z-index: 2;
+}
+
+.faq .content span{
+    font-size: 36px;
+}
+
+.faq .content-r {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 36px;
+}
+
+.faq .content-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 36px;
+}
+
+.faq .content-g {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 36px;
+}
+
+.faq .content-g div{
+    background-color: #9A8FBC;
+}
+
+.faq .content-r div{
+    background-color: #8C74B7;
+}
+
+.faq .content-s div{
+    background-color: #7B639B;
+}   

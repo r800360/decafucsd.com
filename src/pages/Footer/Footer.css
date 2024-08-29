@@ -1,0 +1,54 @@
+.footer {
+    background-color: #FCFCFC;
+    width: 100%;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.footer .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #D8C1F7;
+    width: 100%;
+    height: 200px;
+    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 150px rgb(0, 0, 0);
+    margin-top: -20px;
+    padding-top: 20px;
+    z-index: 1;
+    user-select: text;
+}
+
+.footer .contact p {
+    margin: 0;
+    padding: auto;
+}
+
+.footer .tesc {
+    background-color: #000000;
+    height: 485px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+#organized {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.footer #desc {
+    font-size: 24px;
+    max-width: 1080px;
+    text-align: center;
+}
