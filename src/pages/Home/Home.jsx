@@ -20,7 +20,7 @@ function Home(){
                             <div className="button" id='company'>
                                 <a href='https://www.tinyurl.com/decaf-2024-registration' target="_blank" rel="noreferrer">Company Registration</a>
                             </div>
-                            <p className='deadline'>Deadline: September 15th 2024</p>
+                            <p className='deadline'>Extended Deadline: September 20th 2024</p>
                         </div>
                     </div>
                 </div>
