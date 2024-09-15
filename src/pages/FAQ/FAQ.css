@@ -37,26 +37,12 @@
     z-index: 2;
 }
 
-.faq .content span{
+.faq .content span {
     font-size: 36px;
 }
 
-.faq .content-r {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 36px;
-}
-
-.faq .content-s {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 36px;
-}
-
+.faq .content-r,
+.faq .content-s,
 .faq .content-g {
     display: flex;
     flex-direction: column;
@@ -65,14 +51,53 @@
     padding-bottom: 36px;
 }
 
-.faq .content-g div{
+.faq .content-g div {
     background-color: #9A8FBC;
 }
 
-.faq .content-r div{
+.faq .content-r div {
     background-color: #8C74B7;
 }
 
-.faq .content-s div{
+.faq .content-s div {
     background-color: #7B639B;
-}   
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 768px) {
+  .faq .title {
+      font-size: 40px; /* Adjust title size for smaller screens */
+      width: auto;
+      text-align: center;
+  }
+
+  .faq .content {
+      padding: 0 16px; /* Reduce padding for better fit on small screens */
+  }
+
+  .faq .content span {
+      font-size: 28px; /* Adjust section titles for smaller screens */
+  }
+
+  .faq .content-g,
+  .faq .content-r,
+  .faq .content-s {
+      padding-bottom: 20px; /* Adjust padding between sections */
+  }
+
+  .faq-box {
+      width: 100%; /* Full width for FAQ boxes on mobile */
+  }
+
+  .faq-box h3 {
+      font-size: 20px; /* Adjust question font size */
+  }
+
+  .faq-box p {
+      font-size: 18px; /* Adjust answer font size */
+  }
+
+  .faq-box .faq-toggle {
+      font-size: 1.2em; /* Adjust toggle button size */
+  }
+}
