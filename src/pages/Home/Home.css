@@ -101,7 +101,9 @@
 /* Mobile Layout */
 @media only screen and (max-width: 768px) {
     .home {
-        height: auto; /* Allow height to adjust based on content */
+        height: 100dvh; /* Allow height to adjust based on content */
+        display: flex;
+        flex-direction: column;
     }
 
     .home .content {
@@ -109,6 +111,8 @@
         justify-content: center;
         height: auto;
         margin: 20px;
+        flex-grow: 1;
+        align-items: center;
     }
 
     .home #heading {
