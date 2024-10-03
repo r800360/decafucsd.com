@@ -5,7 +5,7 @@ import Dynovas from "../../logos/Dynovas Matrix Logo (Final).jpg";
 import LLNL from "../../logos/LLNLlogoBLACK.jpg";
 import Viasat from "../../logos/Viasat_2018_Gradient_Web (1).jpg";
 import LANL from "../../logos/LANL_Logo_Temp.png";
-import NTAG_SW from "../../logos/NTAG_SW_Logo.png";
+// import NTAG_SW from "../../logos/NTAG_SW_Logo.png";
 
 function Sponsor() {
   return (
@@ -36,7 +36,7 @@ function Sponsor() {
             Coming Soon
           </div> */}
           <img src={LANL} alt="llal" className="logo"></img>
-          <img src={NTAG_SW} alt="ntag_sw" className="circle"></img>
+          {/* <img src={NTAG_SW} alt="ntag_sw" className="circle"></img> */}
         </div>
       </div>
     </div>
