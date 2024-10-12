@@ -80,8 +80,9 @@
 }
 
 .home #student {
-  background-color: #65558f;
-  /* opacity: 0.5; */
+/*   background-color: #65558f; */
+  background-color: #8c74b7;
+  opacity: 0.5;
 }
 
 .home #company {
