@@ -14,15 +14,9 @@ function Home() {
           <div className="buttons">
             <div className="button-group">
               <div className="button" id="student">
-                <a
-                  href="https://forms.gle/HqDtN7ZHPcj1u4BC6"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Student Registration
-                </a>
+                Student Registration
               </div>
-              <p className="deadline">Registration Open</p>
+              <p className="deadline">Registration Closed</p>
             </div>
             <div className="button-group">
               <div className="button" id="company">
